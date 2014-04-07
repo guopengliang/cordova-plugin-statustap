@@ -1,7 +1,7 @@
 
 var exec = require('cordova/exec');
 
-var TapToScroll = function() {
+var StatusTap = function() {
 	exec(null, null, "StatusTap", "initListener",[]);  
 }
 
