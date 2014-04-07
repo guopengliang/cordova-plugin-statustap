@@ -1,7 +1,7 @@
 (function(cordova) {
 
 	function StatusTap() {
-		exec(null, null, "StatusTap", "initListener", []);
+		cordova.exec(null, null, "StatusTap", "initListener", []);
 	}
 
     StatusTap.install = function() {
