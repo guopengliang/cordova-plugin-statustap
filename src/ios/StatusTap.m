@@ -1,12 +1,13 @@
 //
-//  TapToScroll.m
-//  taptoscroll
+//  StatusTap.m
+//  statustap
 //
 //  Created by Justin McNally on 2/11/13.
+//  Modified by Guopeng Liang on 4/4/14.
 //
 //
 
-#import "TapToScroll.h"
+#import "StatusTap.h"
 
 @interface RotationLessViewController : UIViewController
 
@@ -27,7 +28,7 @@
 @end
 
 
-@implementation TapToScroll
+@implementation StatusTap
 
 @synthesize recognizer;
 
