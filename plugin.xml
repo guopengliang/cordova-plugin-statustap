@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-           id="com.guopengliang.cordova.statustap"
-      version="0.1.1">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.guopengliang.cordova.statustap"
+        version="0.1.2">
 
 	<name>StatusTap</name>
+
 	<description>StatusTap plugin for Cordova/PhoneGap, forked from https://github.com/guopengliang/cordova-plugin-statustap</description>
 	<license>MIT</license>
 	<keywords>phonegap,ios,tap,status,scroll</keywords>
 
 	<js-module src="www/statustap.js" name="StatusTap">
-		<clobbers target="window.StatusTap" />
+		<clobbers target="StatusTap" />
 	</js-module>
       
 	<!-- ios -->
