@@ -89,7 +89,7 @@
 }
 
 -(void) tapped:(UITapGestureRecognizer *)sender {
-  [webView stringByEvaluatingJavaScriptFromString:@"var evt = document.createEvent(\"Event\"); evt.initEvent(\"statusTap\",true,true); window.dispatchEvent(evt);"];
+  [webView stringByEvaluatingJavaScriptFromString:@"var evt = document.createEvent(\"Event\"); evt.initEvent(\"statustap\",true,true); window.dispatchEvent(evt);"];
 }
 
 
