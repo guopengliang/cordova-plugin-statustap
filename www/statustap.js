@@ -1,18 +1,8 @@
-(function(cordova) {
+// runs
 
-	function StatusTap() {
-		cordova.exec(null, null, "StatusTap", "initListener", []);
-	}
+var channel = require('cordova/channel'),
+	exec = require('cordova/exec');
 
-    StatusTap.install = function() {
-        if (!window.plugins) {
-            window.plugins = {};
-        }
-        window.plugins.statustap = new StatusTap();
-        // backward compatible
-        window.statustap = navigator.statustap = window.plugins.statustap;
-    };
-
-	if (cordova) cordova.addConstructor(StatusTap.install);
-
-})(window.cordova || window.Cordova || window.PhoneGap);
+channel.onCordovaReady.subscribe(function() {
+    exec(null, null, "StatusTap", "initListener", []);
+});
